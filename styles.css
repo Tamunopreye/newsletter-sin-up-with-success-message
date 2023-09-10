@@ -33,11 +33,13 @@ body {
 }
 .text-container {
     max-width: 360px;
+    color: var(--Charcoal_Grey);
 }
 .text-container h2 {
     margin-top: 1rem;
     padding: 10px 0;
     font-size: 2.5rem;
+    font-weight: 700;
 }
 .text-container p {
     padding: 5px 0;
@@ -62,7 +64,7 @@ button {
 }
 form input,
 button {
-    padding: 12px;
+    padding: 15px;
     margin-bottom: 1rem;
     border-radius: 5px;
 }
@@ -75,4 +77,24 @@ form button {
 .img-container img {
     width: 100%;
     height: 450px;
+}
+
+@media screen and (max-width: 768px) {
+    .outside-container {
+        display: block;
+    }
+    .inside-container {
+        display: flex;
+        gap: 0;
+        flex-direction: column-reverse;
+        padding: 0;
+        border-radius: 0;
+    }
+    .text-container {
+        margin: 0 auto;
+        padding: 5px 10px;
+    }
+    .img-container img {
+        height: auto;
+    }
 }
