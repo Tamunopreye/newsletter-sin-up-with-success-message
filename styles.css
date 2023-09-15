@@ -31,6 +31,24 @@ body {
     padding: 20px;
     border-radius: 1rem;
 }
+#thank-you-card {
+    display: none;
+    background-color: var(--White);
+    max-width: 350px;
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+#thank-you-card h2 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin: 10px 0;
+}
+#thank-you-card p:first-child {
+    font-size: 1.5rem;
+}
+#thank-you-card .second {
+    margin: 20px 0;
+}
 .text-container {
     max-width: 360px;
     color: var(--Charcoal_Grey);
@@ -50,7 +68,7 @@ body {
     padding: 8px;
     margin: 5px 0;
     margin-right: 5px;
-    border-radius: 1rem;
+    border-radius: 100%;
 }
 .text-container ul {
     list-style-type: none;
@@ -61,12 +79,26 @@ input,
 button {
     display: block;
     width: 100%;
+    border: none;
+}
+#dismiss-button {
+    background-color: var(--Dark_Slate_Grey);
+    color: var(--White);
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+}
+form button:hover,
+#dismiss-button:hover {
+    background-color: var(--Tomato);
+    /* color: var(--White); */
 }
 form input,
 button {
     padding: 15px;
     margin-bottom: 1rem;
     border-radius: 5px;
+    cursor: pointer;
 }
 form button {
     background-color: var(--Dark_Slate_Grey);
@@ -82,6 +114,7 @@ form button {
 @media screen and (max-width: 768px) {
     .outside-container {
         display: block;
+        min-height: 0%;
     }
     .inside-container {
         display: flex;
@@ -96,5 +129,24 @@ form button {
     }
     .img-container img {
         height: auto;
+    }
+
+    #thank-you-card {
+        background-color: var(--White);
+        max-width: 100%;
+        height: 100vh;
+        padding: 1.5rem;
+        border-radius: 1rem;
+        font-size: 1.3rem;
+    }
+    .bg-circle1 {
+        margin-top: 8rem;
+        background-color: var(--Tomato);
+        color: var(--White);
+        padding: 15px;
+        border-radius: 100%;
+    }
+    #dismiss-button {
+        margin-top: 21rem;
     }
 }

@@ -3,7 +3,10 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title></title>
+        <title>
+            Front End Mentors Challenge ||
+            newsletter-sin-up-with-success-message
+        </title>
         <link rel="stylesheet" href="styles.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -37,11 +40,12 @@
                             more!
                         </li>
                     </ul>
-                    <form action="#">
+                    <form action="#" id="emailForm">
                         <label for="email">Email address</label>
+                        <span id="error" style="color: red"></span>
                         <input
                             type="email"
-                            id="email"
+                            id="emailInput"
                             name="email"
                             placeholder="email@company.com"
                             required />
@@ -52,21 +56,19 @@
                     <img id="responsive-image" src="" alt="" />
                 </div>
             </div>
-        </div>
-        <div class="thank-you-card" style="display: none">
-            <p>
-                <i class="fa-solid fa-check bg-circle"></i>
-            </p>
-            <h2>Thanks for subscribing!</h2>
-            <p>
-                A confirmation email has been sent to ash@loremcompany.com.
-                Please open it and click the button inside to confirm your
-                subscription.
-            </p>
-            <button>Dismiss message</button>
+            <div id="thank-you-card" class="show-thank-you">
+                <p>
+                    <i class="fa-solid fa-check bg-circle bg-circle1"></i>
+                </p>
+                <h2>Thanks for subscribing!</h2>
+                <p class="second">
+                    A confirmation email has been sent to
+                    <span id="confirmation"></span>. Please open it and click
+                    the button inside to confirm your subscription.
+                </p>
+                <button id="dismiss-button">Dismiss message</button>
+            </div>
         </div>
     </body>
-    <script src="index.js">
-        console.log("Hello world")
-    </script>
+    <script src="index.js"></script>
 </html>
