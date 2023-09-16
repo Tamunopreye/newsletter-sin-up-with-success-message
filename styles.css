@@ -73,6 +73,8 @@ body {
 .text-container ul {
     list-style-type: none;
     margin: 10px 0;
+    display: flex;
+    align-items: center;
 }
 form label,
 input,
@@ -81,6 +83,10 @@ button {
     width: 100%;
     border: none;
 }
+form input {
+    border: 1px solid gray;
+}
+
 #dismiss-button {
     background-color: var(--Dark_Slate_Grey);
     color: var(--White);
