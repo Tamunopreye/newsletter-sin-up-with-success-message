@@ -130,7 +130,7 @@ form button {
         border-radius: 0;
     }
     .text-container {
-        margin: 0 auto;
+        /* margin: 0 auto; */
         padding: 5px 10px;
     }
     .img-container img {
