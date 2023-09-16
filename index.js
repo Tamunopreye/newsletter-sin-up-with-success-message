@@ -1,8 +1,8 @@
 // Get a reference to the image element
 const imageElement = document.getElementById("responsive-image");
 // Define the image sources for desktop and mobile
-const desktopImageSrc = "//assets/images/illustration-sign-up-desktop.svg";
-const mobileImageSrc = "//assets/images/illustration-sign-up-mobile.svg";
+const desktopImageSrc = "./assets/images/illustration-sign-up-desktop.svg";
+const mobileImageSrc = "./assets/images/illustration-sign-up-mobile.svg";
 // variables for the inside-container,form and thank-you-card
 const emailForm = document.getElementById("emailForm");
 const insideContainer = document.querySelector(".inside-container");
